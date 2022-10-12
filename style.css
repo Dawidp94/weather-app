@@ -76,11 +76,23 @@ button:focus{
 }
 
 .weather h1{
-    font-size: clamp(1rem,10vh + 0.5rem, 4rem);
-    padding: min(1rem,3rem);
+    font-size: 2rem;
+    padding-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (min-width: 400px){
+    .weather h1{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .weather h1{
+        font-size: 4rem;
+    }
 }
 
 .info{
